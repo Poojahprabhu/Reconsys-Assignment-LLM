@@ -2,38 +2,34 @@
 
 Objective: Develop a RAG-based question-answering system that allows users to upload a document, ask questions about its content, and receive relevant answers.
 
-This repository contains a Python script that uses Hugging Face's BERT model for Question Answering on documents in PDF and TXT formats. The script provides a simple interface to upload a document, process the text, and ask questions based on the content of the document.
+- This repository contains a Python script that uses Hugging Face's BERT model for Question Answering on documents in PDF and TXT formats. The script provides a simple interface to upload a document, process the text, and ask questions based on the content of the document.
 
 #Features
+-Extract text from PDF and TXT files.
+-Clean and preprocess the extracted text.
+-Split the text into manageable chunks.
+-Use Hugging Face's BERT model for Question Answering.
+-Provide an interface for users to upload documents and ask questions.
 
-Extract text from PDF and TXT files.
-Clean and preprocess the extracted text.
-Split the text into manageable chunks.
-Use Hugging Face's BERT model for Question Answering.
-Provide an interface for users to upload documents and ask questions.
 #Requirements
+-Python 3.6 or higher
+-IPython
+-ipywidgets
+-pdfminer.six
+-transformers
+-torch
 
-Python 3.6 or higher
-IPython
-ipywidgets
-pdfminer.six
-transformers
-torch
 #Installation
-
-Clone the repository.
-
-Create a virtual environment and activate it.
-
-Install the required packages.
+- Clone the repository.
+- Create a virtual environment and activate it.
+- Install the required packages.
 
 #Usage
+- Run the IPYNB in an Google colab or Jupyter Notebook environment.
 
-Run the IPYNB in an Google colab or Jupyter Notebook environment.
+- Upload a document (PDF or TXT) using the provided file upload widget.
 
-Upload a document (PDF or TXT) using the provided file upload widget.
-
-Ask questions based on the uploaded document using the text input and submit button.
+- Ask questions based on the uploaded document using the text input and submit button.
 
 #Output Images 
 
@@ -42,8 +38,7 @@ Ask questions based on the uploaded document using the text input and submit but
 
 
 #Assignment Criteria fullfilled
-
-The BERT_(Hugging_face).ipynb file consists of code utilising the BERT (Hugging face) model to generate answers to the questions.
+- The BERT_(Hugging_face).ipynb file consists of code utilising the BERT (Hugging face) model to generate answers to the questions.
 #Requirements fulfilled:
 
 Document Upload:
@@ -80,11 +75,10 @@ b. Ask questions
 c. View generated answers
 
 Limitations:
+- Processing time - The model takes 5 to 10 seconds to generate answer for documents with 10000 to 15000 words.
+- Error handling - The api may throw unexpected runtime error
 
-Processing time - The model takes 5 to 10 seconds to generate answer for documents with 10000 to 15000 words.
-Error handling - The api may throw unexpected runtime error
 Scope to improvement:
-
-Handling runtime errors
-Fine tuning the model
-Testing for several use cases
+- Handling runtime errors
+- Fine tuning the model
+- Testing for several use cases
